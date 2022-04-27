@@ -17,7 +17,7 @@
 
 Python 3.6+
 
-### Command
+### Installaion Command
 
 pip install appsurifyci --upgrade
 
