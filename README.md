@@ -8,7 +8,6 @@
 - [Tests To Run](#teststorun)
 - [Example Usage](#example_usage)
 - [Additional Arguments](#additional_arguments)
-  - [Test Selection Arguments](#test_selection_arguments)
   - [Build Failure Arguments](#build_failure_arguments)
 
 
@@ -58,13 +57,6 @@ pip install appsurifyci --upgrade
 runtestswithappsurify --url "https://dummy.appsurify.com" --apikey "apikeyvalue" --project "Test" --testsuite "Test" --runtemplate "prioritized tests" --testtemplate "mvn" --percentage "20"
 
 ## <a id="additional_arguments"></a>Additional Arguments - For Customization
-
-### <a id="test_selection_arguments"></a>Test Selection Arguments
-
-| argument | default | options/details |
-| --- | --- | --- |
-| maxtests | 10000000 | the maximum number of tests to run in each test execution set | 
-| runfrequency | "multiple" | #options 'single' or 'multiple' determines if the prioritized tests should be for a single commit or mulltiple i.e. since the last test run |
 
 ### <a id="build_failure_arguments"></a>Build Failure Arguments 
 
