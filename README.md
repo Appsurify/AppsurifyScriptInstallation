@@ -43,7 +43,7 @@ pip install appsurifyci --upgrade
 | report | Location of xml reports created by the test run if this is not the default location for the test type |
 
 
-## <a id="teststorun"></a>Parameter Details - teststorun  
+## <a id="teststorun"></a>Parameter Details - Tests Execution  
 
 | Option | Details |
 | --- | --- |
@@ -58,11 +58,12 @@ runtestswithappsurify --url "https://dummy.appsurify.com" --apikey "apikeyvalue"
 
 ## <a id="additional_arguments"></a>Additional Arguments - For Customization
 
-### <a id="build_failure_arguments"></a>Build Failure Arguments 
-
 | argument | default | options/details |
 | --- | --- | --- |
 | fail | newdefects, reopeneddefects | options newdefects, reopeneddefects, flakybrokentests, newflaky, reopenedflaky, failedtests, brokentests |
 | rerun | "false" | whether failed tests should be rerun |
 | maxrerun | 3 | the number of times failed tests should be rerun |
 | failfast | "false" | whether after each set of test runs to determine if the build has failed (tests will still be rerun if this has been selected) |
+| executioncommand | "" | Command to be executed following completion of the script [[teststorun]] will be replaced with the formatted list of tests to run |
+
+For CI specific integrations please contact Appsurify
